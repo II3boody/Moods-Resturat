@@ -1,0 +1,210 @@
+:root {
+    --black: #000;
+    --black-56: #1f1f1f;
+    --yellow: #ffc107;
+    --yellow-alt: #ff9800;
+    --brown: #8B4513;
+    --grey-light: #ccc;
+    --background: #fff;
+    --text-color: #000;
+    --section-bg: #f5f5f5;
+    --overlay-bg: rgba(0, 0, 0, 0.4);
+    --navbar-bg: #00000090;
+    --footer-bg: #000;
+    --footer-text: #fff;
+    --cta-bg: #000;
+    --social-icon: #8B4513;
+    --social-border: #8B4513;
+    --border-color: #eee;
+    --transition: 0.3s;
+    --rad8: 8px;
+    --half-rad: 50%;
+}
+
+
+html[data-theme="dark"] {
+    --background: #000000;
+    --text-color: #fff;
+    --border-color: #444;
+    --section-bg: #1a1a1a;
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --navbar-bg: #00000090;
+    --footer-bg: #000;
+    --footer-text: #fff;
+    --cta-bg: #1a1a1a;
+    --social-icon: #ffc107;
+    --social-border: #ffc107;
+}
+
+body {
+    background-color: var(--background);
+}
+
+#festival {
+    padding: 0;
+    display: flex;
+
+}
+
+#festival .content {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+#festival .content a {
+    color: var(--yellow);
+}
+
+#festival .img {
+    flex-basis: 50%;
+}
+
+#festival .img img {
+    width: 100%;
+}
+
+#festival:first-of-type .img img {
+    animation: right-to-left 1.5s ease;
+    -webkit-animation: right-to-left 1.5s ease;
+}
+
+@media (max-width:768px) {
+    #festival {
+        flex-direction: column;
+    }
+
+    #festival .content {
+        order: 2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+#festival .content .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+#festival .content .container div:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#booking {
+    background-color: var(--section-bg);
+}
+
+#booking .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+#booking .container .content4 {
+    border-radius: 10px;
+    flex-basis: 300px;
+    background-color: var(--background);
+    animation: map 1.5s;
+    -webkit-animation: map 1.5s;
+    transition: var(--transition);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.103);
+}
+
+#booking .container .content4:hover {
+    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+}
+
+#booking .container .content4 .imgjs2 {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#booking .container .content4 .info {
+    color: var(--text-color);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#booking .content4 .info h2 {
+    font-weight: 800;
+    font-size: 26px;
+}
+
+
+@keyframes map {
+    from {
+        transform: translatey(300px);
+        -webkit-transform: translatey(300px);
+        -moz-transform: translatey(300px);
+        -ms-transform: translatey(300px);
+        -o-transform: translatey(300px);
+    }
+
+    to {
+        transform: translatey(0px);
+        -webkit-transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        -ms-transform: translatey(0px);
+        -o-transform: translatey(0px);
+    }
+}
+
+@keyframes manage {
+    from {
+        transform: translatey(300px);
+        -webkit-transform: translatey(300px);
+        -moz-transform: translatey(300px);
+        -ms-transform: translatey(300px);
+        -o-transform: translatey(300px);
+    }
+
+    to {
+        transform: translatey(0px);
+        -webkit-transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        -ms-transform: translatey(0px);
+        -o-transform: translatey(0px);
+    }
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateX(300px);
+        -webkit-transform: translateX(300px);
+        -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+        -o-transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+}

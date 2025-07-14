@@ -1,0 +1,209 @@
+:root {
+    --black: #000;
+    --black-56: #1f1f1f;
+    --yellow: #ffc107;
+    --yellow-alt: #ff9800;
+    --brown: #8B4513;
+    --grey-light: #ccc;
+    --background: #fff;
+    --text-color: #000;
+    --section-bg: #f5f5f5;
+    --overlay-bg: rgba(0, 0, 0, 0.4);
+    --navbar-bg: #00000090;
+    --footer-bg: #000;
+    --footer-text: #fff;
+    --cta-bg: #000;
+    --social-icon: #8B4513;
+    --social-border: #8B4513;
+    --border-color: #eee;
+    --transition: 0.3s;
+    --rad8: 8px;
+    --half-rad: 50%;
+}
+
+
+html[data-theme="dark"] {
+    --background: #000000;
+    --text-color: #fff;
+    --border-color: #444;
+    --section-bg: #1a1a1a;
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --navbar-bg: #00000090;
+    --footer-bg: #000;
+    --footer-text: #fff;
+    --cta-bg: #1a1a1a;
+    --social-icon: #ffc107;
+    --social-border: #ffc107;
+}
+
+
+body {
+    background-color: var(--background);
+}
+
+#review {
+    background-color: var(--section-bg);
+}
+
+#review h1 {
+    text-transform: capitalize;
+    width: fit-content;
+    margin: 0 auto 50px;
+    color: var(--text-color);
+    text-transform: uppercase;
+
+}
+
+.testimonial-form {
+    background-color: var(--background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#review .form-group input,
+#review .form-group textarea,
+#review .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--section-bg);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    color: var(--text-color);
+}
+
+#review .form-group textarea {
+    height: 250px;
+    resize: none;
+}
+
+#review .form-group input:focus,
+#review .form-group textarea:focus,
+#review .form-group select:focus {
+    border-color: var(--yellow);
+    outline: none;
+}
+
+#review .container form .btn {
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#review .container form .btn:hover {
+    background-color: var(--yellow-alt);
+}
+
+/* Star rating styling */
+#review .form-group .stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 5px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.stars input[type="radio"] {
+    display: none;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.stars label {
+    color: var(--border-color);
+    font-size: 1.5rem;
+    padding: 0 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.stars label:hover,
+.stars label:hover~label,
+.stars input[type="radio"]:checked~label {
+    color: var(--yellow);
+}
+
+#testimonials .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+#testimonials .container .card {
+    padding: 15px;
+    background: var(--section-bg);
+    color: var(--text-color);
+}
+
+#testimonials .container .card .head {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials .container .card .head .info {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+#testimonials .container .card .head .mail {
+    text-transform: uppercase;
+}
+
+#testimonials .container .card .rating {
+    color: var(--yellow);
+}
+
+#testimonials .container .card .comment {
+    padding: 10px 0;
+}
+
+#testimonials .container .card .comment p {
+    margin: 0;
+}

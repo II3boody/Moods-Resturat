@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./imgs/logo-white.png">
+    <title>Restaurant Sign Up</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sign-2.css">
+</head>
+
+<body>
+    <nav>
+        <div id="user-name"></div>
+        <div class="menu-container">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">En</button>
+            </div>
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="light"><i class="fa-solid fa-sun"></i></button>
+            </div>
+        </div>
+        <div class="off-screen-menu">
+            <div class="close-btn">&times;</div>
+            <ul>
+                <li><a href="home.html" data-i18n="home">Home</a></li>
+                <li><a href="menu.html" data-i18n="menu">Menu</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                <li><a href="festival.html" data-i18n="festival">Festival</a></li>
+                <li><a href="review.html" data-i18n="review">Review</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img id="logo" src="./imgs/logo-without-text-white.png" alt="MOODS Logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header class="breadcrumb" aria-label="breadcrumb">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li aria-current="page">Register</li>
+        </ul>
+    </header>
+    <section id="register">
+        <div class="container">
+            <div class="register-container">
+                <h1>Create Your Account</h1>
+                <form id="signup-form" novalidate>
+                    <label for="username">Name</label>
+                    <input type="text" id="username" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="location">Your Location</label>
+                    <input type="text" id="location" required placeholder="City or area">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" required>
+                    <a href="sign-in.html">already have an account?</a>
+                    <button type="submit">Register</button>
+                    <p class="message" id="form-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/moodsqena" @blank_> <i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/moodsqena"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="moods.restaurant.cafe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="mid">
+            <p data-i18n="footermediap">For media inquiries and press-related matters please reach out to
+                press@moods.com.en</p>
+        </div>
+        <div class="bottom">
+            <div class="left" data-i18n="copyright">&copy; 2025 Moods. All Rights Reserved.</div>
+            <div class="mid">
+                <ul>
+                    <li data-i18n="privacy">privacy policy</li>
+                    <li data-i18n="accessibility">web accessibility statment</li>
+                    <li data-i18n="cookie">cookie policy</li>
+                    <li data-i18n="use">Terms of use</li>
+                </ul>
+            </div>
+            <div class="right"><a href="index.html"><img src="./imgs/logo-without-text-black.png" alt=""></div></a>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="./js/auth.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

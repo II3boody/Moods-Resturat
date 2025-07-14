@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="icon" href="./imgs/logo-white.png">
+    <title>Menu</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="menu-container">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">En</button>
+            </div>
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="light"><i class="fa-solid fa-sun"></i></button>
+            </div>
+        </div>
+        <div class="off-screen-menu">
+            <div class="close-btn">&times;</div>
+            <ul>
+                <li><a href="home.html" data-i18n="home">Home</a></li>
+                <li><a href="menu.html" data-i18n="menu">Menu</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                <li><a href="festival.html" data-i18n="festival">Festival</a></li>
+                <li><a href="review.html" data-i18n="review">Review</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img id="logo" src="./imgs/logo-without-text-white.png" alt="MOODS Logo">
+                </a>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <div id="addToCartToast">✔️ Added to cart</div>
+    <section id="menu">
+        <div class="container">
+            <div class="main-filters">
+                <button class="filter-btn" data-i18n="seyami" data-category="christians">Seyami</button>
+                <button class="filter-btn" data-i18n="fattah" data-category="fattah">Fattah</button>
+                <button class="filter-btn" data-i18n="sandwitchs" data-category="sandwitchs">Sandwitches</button>
+                <button class="filter-btn" data-i18n="meal" data-category="meals">Meals</button>
+                <button class="filter-btn" data-i18n="rizo" data-category="rizo">Rizo</button>
+                <button class="filter-btn" data-i18n="potato" data-category="potato">Potato</button>
+                <button class="filter-btn" data-i18n="sauces" data-category="sauces">Sauces</button>
+                <button class="filter-btn" data-i18n="desserts" data-category="desserts">Desserts</button>
+            </div>
+            <div class="sub-filters" id="sandwitchs-sub">
+                <button class="sub-filter-btn" data-i18n="burger" data-subcategory="burgers">Burgers</button>
+                <button class="sub-filter-btn" data-i18n="wrap" data-subcategory="wraps">Wraps</button>
+                <button class="sub-filter-btn" data-i18n="chicken" data-subcategory="chicken">Chicken</button>
+            </div>
+            <div class="sub-filters" id="meals-sub">
+                <button class="sub-filter-btn" data-i18n="chickenMeals" data-subcategory="chicken-meals">Chicken
+                    Meals</button>
+                <button class="sub-filter-btn" data-i18n="stirpsMeals" data-subcategory="strips-meals">Strips
+                    Meals</button>
+                <button class="sub-filter-btn" data-i18n="kidsMeals" data-subcategory="kids-meals">Kids Meals</button>
+                <button class="sub-filter-btn" data-i18n="healthyMeals" data-subcategory="healthy-meals">Healthy
+                    Meals</button>
+            </div>
+            <button class="clear-filters" data-i18n="clear" onclick="clearAllFilters()">Clear All Filters</button>
+        </div>
+        <div class="container" id="menuContainer">
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/moodsqena" @blank_> <i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/moodsqena"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="moods.restaurant.cafe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="mid">
+            <p data-i18n="footermediap">For media inquiries and press-related matters please reach out to
+                press@moods.com.en</p>
+        </div>
+        <div class="bottom">
+            <div class="left" data-i18n="copyright">&copy; 2025 Moods. All Rights Reserved.</div>
+            <div class="mid">
+                <ul>
+                    <li data-i18n="privacy">privacy policy</li>
+                    <li data-i18n="accessibility">web accessibility statment</li>
+                    <li data-i18n="cookie">cookie policy</li>
+                    <li data-i18n="use">Terms of use</li>
+                </ul>
+            </div>
+            <div class="right"><a href="index.html"><img src="./imgs/logo-without-text-black.png" alt=""></div></a>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu-translate.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "Kaha7dGxUxw4aPdYLNsff"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+</body>
+
+</html>

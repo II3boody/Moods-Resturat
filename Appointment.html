@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./imgs/logo-white.png">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/appointment-2.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div id="userNameDiv">
+        </div>
+        <div class="menu-container">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">En</button>
+            </div>
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="light"><i class="fa-solid fa-sun"></i></button>
+            </div>
+        </div>
+        <div class="off-screen-menu">
+            <div class="close-btn">&times;</div>
+            <ul>
+                <li><a href="home.html" data-i18n="home">Home</a></li>
+                <li><a href="menu.html" data-i18n="menu">Menu</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                <li><a href="festival.html" data-i18n="festival">Festival</a></li>
+                <li><a href="review.html" data-i18n="review">Review</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img id="logo" src="./imgs/logo-without-text-white.png" alt="MOODS Logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <section id="clock">
+        <h1 class="main-heading"><span data-i18n="working">Working</span> <span data-i18n="hours">hours</span></h1>
+        <div class="container">
+            <div class="clock-dial" id="clock">
+                <span class="number" style="top:10%;  left:50%;">12</span>
+                <span class="number" style="top:21%;  left:79%;">1</span>
+                <span class="number" style="top:50%; left:90%;">3</span>
+                <span class="number" style="top:79%; left:79%;">5</span>
+                <span class="number" style="top:90%; left:50%;">6</span>
+                <span class="number" style="top:79%; left:21%;">7</span>
+                <span class="number" style="top:50%; left:10%;">9</span>
+                <span class="number" style="top:21%; left:21%;">11</span>
+                <div class="hand hour" id="hour-hand"></div>
+                <div class="hand minute" id="minute-hand"></div>
+                <div class="hand second" id="second-hand"></div>
+                <div class="center-point"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="saturday">saturday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="sunday">sunday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="monday">monday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="tuesday">tuesday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="wednsday">wednsday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="thursday">thursday</h1>
+            </div>
+            <div class="day">
+                <div class="content">
+                    <h1 data-i18n="open">Open at</h1>
+                    <p>12:00 <span data-i18n="pm">pm</span></p>
+                </div>
+                <div class="content">
+                    <h1 data-i18n="close">Close at</h1>
+                    <p>2:00 <span data-i18n="am">am</span></p>
+                </div>
+                <h1 data-i18n="friday">friday</h1>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/moodsqena" @blank_> <i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/moodsqena"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="moods.restaurant.cafe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="mid">
+            <p data-i18n="footermediap">For media inquiries and press-related matters please reach out to
+                press@moods.com.en</p>
+        </div>
+        <div class="bottom">
+            <div class="left" data-i18n="copyright">&copy; 2025 Moods. All Rights Reserved.</div>
+            <div class="mid">
+                <ul>
+                    <li data-i18n="privacy">privacy policy</li>
+                    <li data-i18n="accessibility">web accessibility statment</li>
+                    <li data-i18n="cookie">cookie policy</li>
+                    <li data-i18n="use">Terms of use</li>
+                </ul>
+            </div>
+            <div class="right"><a href="index.html"><img src="./imgs/logo-without-text-black.png" alt=""></div></a>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="./js/appointment.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/language.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./imgs/logo-white.png">
+  <title>MOODS Restaurant & Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav>
+    <div id="userNameDiv">
+    </div>
+    <div class="menu-container">
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="language-selector">
+        <button class="lang-btn" data-lang="en">En</button>
+      </div>
+      <div class="theme-selector">
+        <button class="theme-btn" data-theme="light"><i class="fa-solid fa-sun"></i></button>
+      </div>
+    </div>
+    <div class="off-screen-menu">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li><a href="home.html" data-i18n="home">Home</a></li>
+        <li><a href="menu.html" data-i18n="menu">Menu</a></li>
+        <li><a href="about.html" data-i18n="about">About</a></li>
+        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+        <li><a href="festival.html" data-i18n="festival">Festival</a></li>
+        <li><a href="review.html" data-i18n="review">Review</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="logo">
+        <a href="home.html">
+          <img id="logo" src="./imgs/logo-without-text-white.png" alt="MOODS Logo">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <video autoplay muted loop id="bg-video">
+    <source src="./vid/v-food.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
+    <div class="hero-text">
+      <h1 data-i18n="landing">Save the moment</h1>
+      <p data-i18n="landingP">Your spot for fast food, juices & desserts</p>
+    </div>
+  </div>
+  <section class="about">
+    <h2 data-i18n="welcome">Welcome to MOODS</h2>
+    <p data-i18n="welcomeP">Your perfect spot for fast meals, refreshing juices, and sweet desserts – all in one place.
+    </p>
+  </section>
+
+  <section class="location">
+    <h2 data-i18n="location">Our Location</h2>
+    <div class="map-container">
+      <iframe id="map-light"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1922.7208586161678!2d32.714124194868575!3d26.158616722895502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144ec9bbaf2ad475%3A0x6178877d4da69752!2sMOODS%20Restaurant%20%26%20Cafe!5e0!3m2!1sar!2seg!4v1752308372206!5m2!1sar!2seg"
+        width="100%" height="400" style="border:0; display:none;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe id="map-dark"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.17739095796!2d32.71524402475527!3d26.15835167710482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144ec9bbaf2ad475%3A0x6178877d4da69752!2sMOODS%20Restaurant%20%26%20Cafe!5e0!3m2!1sar!2seg!4v1751878762491!5m2!1sar!2seg"
+        width="100%" height="400" style="border:0; display:none;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <section class="popular-section">
+    <h2 class="section-title" data-i18n="popular">popular</h2>
+    <div class="popular-items-container">
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/chickenranchy.png" alt="Cicken Ranchy">
+        <h3>Cicken Ranchy</h3>
+        <p>109.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/classic.png" alt="Classic">
+        <h3>Classic</h3>
+        <p>89.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/twister.png" alt="Twister">
+        <h3>Twister</h3>
+        <p>75.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/boom.png" alt="Boom">
+        <h3>Boom</h3>
+        <p>109.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/mix fries.png" alt="Mix Fries">
+        <h3>Mix Fries</h3>
+        <p>70.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/rizo.png" alt="Rizo">
+        <h3>Rizo</h3>
+        <p>70.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/waffel.png" alt="Waffel">
+        <h3>Waffel</h3>
+        <p>60.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/bigfries.png" alt="Big Fries">
+        <h3>Big Fries</h3>
+        <p>30.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/crespystrips.png" alt="Crespy Strips">
+        <h3>Crespy Strips</h3>
+        <p>107.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+      <div class="popular-card">
+        <img src="./imgs/most_wanted/Chickenturky.png" alt="Chicken Turky">
+        <h3>Chicken Turky</h3>
+        <p>117.00 EGP</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+    </div>
+  </section>
+  <!-- الاصناف -->
+  <section class="Categories">
+    <h2 class="section-title" data-i18n="Categories">Our Categories</h2>
+    <div class="popular-items-container">
+
+      <div class="popular-card">
+        <img src="imgs/menu/sandwitchs/Burger/127 egp - fire burger.png" alt="sandwiches">
+        <h3 data-i18n="sandwitchs">sandwichess</h3>
+        <p>Juicy beef & chicken burgers with fresh toppings.</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+
+      <div class="popular-card">
+        <img src="imgs/menu/meals/meals/219egp - couple box.png" alt="Meals">
+        <h3 data-i18n="meal">Meals</h3>
+        <p>Hot & cheesy pizza with different flavors.</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+
+      <div class="popular-card">
+        <img src="imgs/menu/dessert/60 egp - rota chocolate.png" alt="Desserts">
+        <h3 data-i18n="desserts">Desserts</h3>
+        <p>Crispy golden chicken with secret spices.</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+
+      <div class="popular-card">
+        <img src="imgs/menu/christians/40 - egp ماريان فيجتريان فاهيتا.png" alt="Seyami">
+        <h3 data-i18n="seyami">Seyami</h3>
+        <p>Freshly squeezed natural juices for a fresh feel.</p>
+        <a href="menu.html" class="btn" data-i18n="view">View</a>
+      </div>
+
+    </div>
+  </section>
+  <div class="menu-link">
+    <div class="container">
+      <a href="menu.html" class="btn">View Our Full Menu</a>
+      <div style="margin-bottom: 60px;"></div>
+    </div>
+  </div>
+  <section id="testimonials">
+    <h1 class="main-heading" data-i18n="reviews">Reviews</h1>
+    <div class="cont">
+      <p data-i18n="testimonialsP">Our customers love the Moods experience — from the mouthwatering meals to the
+        warm, welcoming atmosphere. Every
+        dish is crafted with care, and it shows in the smiles of those who dine with us. Whether you're here for a quick
+        bite or a family gathering, Moods is where great food meets great memories.</p>
+    </div>
+    <div class="container" id="testimonialsContainer">
+      <div class=" no-testimonials" data-i18n="noTestimonials">No reviews yet. Be the first to share your
+        experience!</div>
+  </section>
+  <!-- <section class="portfolio">
+    <h2 class="main-heading">Portfolio</h2>
+    <div class="container">
+      <div class="card">
+        <img src="./imgs/most_wanted/chickenranchy.png" alt="Cicken Ranchy">
+        <div class="info">
+          <h3 class="name">Cicken Ranchy</h3>
+          <p>109.00 EGP</p>
+        </div>
+      </div> -->
+  <!-- <button class="order-btn"> Order NOW</button> -->
+  </div>
+  </section>
+  <footer>
+    <div class="top">
+      <div class="social">
+        <a target="_blank" href="https://www.facebook.com/moodsqena"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" href="https://www.instagram.com/moodsqena"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="mailto:moods.restaurant.cafe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="mid">
+      <p data-i18n="footermediap">
+        For media inquiries and press-related matters please reach out to press@moods.com.en
+      </p>
+    </div>
+    <div class="bottom">
+      <div class="left" data-i18n="copyright">
+        © 2025 Moods. All Rights Reserved.
+      </div>
+      <div class="mid">
+        <ul>
+          <li data-i18n="privacy">Privacy Policy</li>
+          <li data-i18n="accessibility">Web Accessibility Statement</li>
+          <li data-i18n="cookie">Cookie Policy</li>
+          <li data-i18n="use">Terms of Use</li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="home"><img src="imgs/logo-without-text-black.png" alt="MOODS Logo"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./js/home.js"></script> -->
+  <script src="./js/language.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/review.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "Kaha7dGxUxw4aPdYLNsff"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script>
+</body>
+
+</html>

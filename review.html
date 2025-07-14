@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Gourmet Delight - Customer Testimonials</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./Css/review.css">
+    <link rel="icon" href="./imgs/logo-white.png">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div id="userNameDiv">
+        </div>
+        <div class="menu-container">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">En</button>
+            </div>
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="light"><i class="fa-solid fa-sun"></i></button>
+            </div>
+        </div>
+        <div class="off-screen-menu">
+            <div class="close-btn">&times;</div>
+            <ul>
+
+                <li><a href="home.html" data-i18n="home">Home</a></li>
+                <li><a href="menu.html" data-i18n="menu">Menu</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                <li><a href="festival.html" data-i18n="festival">Festival</a></li>
+                <li><a href="review.html" data-i18n="review">Review</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img id="logo" src="./imgs/logo-without-text-white.png" alt="MOODS Logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <section id="review">
+        <div id="user-name" style="color: white; margin-left: auto; font-weight: bold;"></div>
+        <h1 data-i18n="share">Share your dining experience with us</h1>
+        <div class="container">
+            <div class="testimonial-form">
+                <h2 class="form-title" data-i18n="yourReview">Leave Your Review</h2>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="yourName">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="rating">Your Rating</label>
+                        <div class="stars">
+                            <input type="radio" id="star1" name="rating" value="5"><label for="star1">★</label>
+                            <input type="radio" id="star2" name="rating" value="4"><label for="star2">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                            <input type="radio" id="star4" name="rating" value="2"><label for="star4">★</label>
+                            <input type="radio" id="star5" name="rating" value="1"><label for="star5">★</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" data-i18n="experience">Your Experience</label>
+                        <textarea id="comment" name="comment" required
+                            placeholder="Tell us about your dining experience..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-i18n="submitReview">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h1 class="main-heading" data-i18n="reviews">Reviews</h1>
+        <div class="container" id="testimonialsContainer">
+            <div class=" no-testimonials" data-i18n="noTestimonials">No Reviews yet. Be the first to share your
+                experience!</div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/moodsqena" @blank_> <i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/moodsqena"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="moods.restaurant.cafe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="mid">
+            <p data-i18n="footermediap">For media inquiries and press-related matters please reach out to
+                press@moods.com.en</p>
+        </div>
+        <div class="bottom">
+            <div class="left" data-i18n="copyright">&copy; 2025 Moods. All Rights Reserved.</div>
+            <div class="mid">
+                <ul>
+                    <li data-i18n="privacy">privacy policy</li>
+                    <li data-i18n="accessibility">web accessibility statment</li>
+                    <li data-i18n="cookie">cookie policy</li>
+                    <li data-i18n="use">Terms of use</li>
+                </ul>
+            </div>
+            <div class="right"><a href="index.html"><img src="./imgs/logo-without-text-black.png" alt=""></div></a>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+
+</html>
