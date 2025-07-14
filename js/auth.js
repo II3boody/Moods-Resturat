@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('loggedInUserName', name);
 
-        window.location.href = 'home.html';
+        window.location.href = 'index.html';
     });
 
     function showMessage(text, clr = 'red') {
